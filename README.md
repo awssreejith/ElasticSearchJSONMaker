@@ -25,7 +25,13 @@ To insert in to Elastic search execute the below command
 curl -H "Content-Type: application/json" -XPOST localhost:9200/staticanalysis_comp/severity/_bulk --data-binary @ElasticSearchInsertFile.COMPONENT_NAME
 
 Where 
-Localhost:9200        ==> machine where Elastic search is running:port where it is listening
+Localhost:9200        ==> machine where Elastic search is running
+
+9200                  ==> port where it is listening
+
 staticanalysis_comp   ==> index name 
+
 severity              ==> type
+
+
 
